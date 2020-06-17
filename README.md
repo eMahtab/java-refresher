@@ -26,6 +26,6 @@ System.out.println(list);  // [1, 5, 2, 3]
 ```
 List<Integer> list = new ArrayList<>();
 list.add(1); list.add(2); list.add(3);
-list.add(1, 5);
+list.set(1, 5);
 System.out.println(list);  // [1, 5, 3]
 ```
