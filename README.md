@@ -14,6 +14,12 @@ System.out.println(s.substring(1));   => "" (empty string)
 System.out.println(s.substring(2));   => StringIndexOutOfBoundsException  
 ```
 
+**Concat String and char**
+```
+String s = "a" + "hello".charAt(1);
+System.out.println(s); //ae
+```
+
 **List add(int index, T element)**
 ```
 List<Integer> list = new ArrayList<>();
