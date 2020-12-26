@@ -1,5 +1,8 @@
 # Java Refresher
 
+**ArrayDeque Vs. LinkedList**
+`java.util.ArrayDeque` doesn't allow null while `java.util.LinkedList` does allow adding null.
+
 **Convert an int to binary string**
 ```
 Integer.toBinaryString(2) => 10
