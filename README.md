@@ -4,7 +4,7 @@
 
 `java.util.ArrayDeque` doesn't allow null while `java.util.LinkedList` does allow adding null.
 
-**Collections.reverse()**
+**Collections.reverse() - works fine with list of lists 👍**
 
 ```
 list = [[1,2], [3], [4,5] , [6]]
