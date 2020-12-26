@@ -4,6 +4,13 @@
 
 `java.util.ArrayDeque` doesn't allow null while `java.util.LinkedList` does allow adding null.
 
+**Collections.reverse()**
+
+`list = [[1,2], [3], [4,5] , [6]]
+ Collections.reverse(list) 
+ // [[6], [4,5], [3], [1,2]]
+` 
+
 **Convert an int to binary string**
 ```
 Integer.toBinaryString(2) => 10
