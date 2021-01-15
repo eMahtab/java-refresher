@@ -2,6 +2,7 @@
 
 
 **Empty array**
+
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
 
