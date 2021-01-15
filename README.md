@@ -1,5 +1,10 @@
 # Java Refresher
 
+
+**Empty array**
+`int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
+
+
 **ArrayDeque Vs. LinkedList**
 
 `java.util.ArrayDeque` doesn't allow null while `java.util.LinkedList` does allow adding null.
