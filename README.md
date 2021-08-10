@@ -38,6 +38,15 @@ String s = "a" + "hello".charAt(1);
 System.out.println(s); //ae
 ```
 
+**StringBuilder apppend **
+```
+StringBuilder sb = new StringBuilder();
+sb.append('a');
+sb.append(1);
+sb.append("ABC");
+System.out.println(sb); // a1ABC
+```
+
 **List add(int index, T element)**
 ```
 List<Integer> list = new ArrayList<>();
