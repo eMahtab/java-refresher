@@ -62,3 +62,31 @@ list.add(1); list.add(2); list.add(3);
 list.set(1, 5);
 System.out.println(list);  // [1, 5, 3]
 ```
+
+**Set contains()**
+```
+
+import java.util.*;
+class Main {
+  class Employee {
+    int id;
+    Employee(int id){
+      this.id = id;
+    }
+  }
+  public static void main(String[] args) {
+    new Main().check();
+  }
+
+  private void check() {
+    Employee e1 = new Employee(1);
+    Employee e2 = new Employee(1);
+    Set<Employee> set = new HashSet<>();
+    set.add(e1);
+    System.out.println(set.contains(e2)); // false
+    set.add(e2);
+    Employee e3 = e2;
+    System.out.println(set.contains(e3)); // true
+  }
+}
+```
