@@ -64,7 +64,7 @@ System.out.println(list);  // [1, 5, 3]
 ```
 
 **Set contains()**
-```
+```java
 
 import java.util.*;
 class Main {
