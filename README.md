@@ -22,9 +22,16 @@ Collections.reverse(list)
 ```
 Integer.toBinaryString(2) => 10
 Integer.toBinaryString(-2) => 11111111111111111111111111111110
-
 ```
-
+**Bitwise OR(|) and AND(&) operation**
+```
+int num5 = 5;
+int num8 = 8;
+int or = 5 | 8;
+int and = 5 & 8;
+System.out.println("5 | 8 =" + or);  // 13
+System.out.println("5 & 8 =" + and); // 0
+```
 **String substring() method**
 ```
 String s = "a";
