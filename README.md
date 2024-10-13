@@ -38,7 +38,7 @@ String s = "a" + "hello".charAt(1);
 System.out.println(s); //ae
 ```
 
-**StringBuilder apppend **
+**StringBuilder apppend**
 ```
 StringBuilder sb = new StringBuilder();
 sb.append('a');
