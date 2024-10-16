@@ -13,12 +13,12 @@
 **Cloning a 1D/2D array of primitives with .clone()**
 ```java
     int[] arr1 = {5, 6, 3, 2, 10};
-		int[] arr2 =  arr1.clone();
-		System.out.println("Arr 2 : " + Arrays.toString(arr2)); // {5, 6, 3, 2, 10}
-		int[][] arr3 = {{1, 2, 3}, {4, 5, 6}};
-		int[][] arr4 = arr3.clone();
-		for(int[] nums : arr4)
-		System.out.println("Arr 4 : " + Arrays.toString(nums));  // {{1, 2, 3}, {4, 5, 6}}
+    int[] arr2 =  arr1.clone();
+    System.out.println("Arr 2 : " + Arrays.toString(arr2)); // {5, 6, 3, 2, 10}
+    int[][] arr3 = {{1, 2, 3}, {4, 5, 6}};
+    int[][] arr4 = arr3.clone();
+    for(int[] nums : arr4)
+    System.out.println("Arr 4 : " + Arrays.toString(nums));  // {{1, 2, 3}, {4, 5, 6}}
 ```
 
 **Collections.reverse() - works fine with list of lists 👍**
