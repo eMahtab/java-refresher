@@ -37,7 +37,7 @@ class Main {
    }
 }
 ```
-**ConcurrentHashMap**
+**ConcurrentHashMap : For higher throughput, doesn't lock entire map while performing a write** 
 ```
 Read operations are guaranteed not to be blocked or block a key. Write operations are blocked and block other writes at the map Entry level. These two ideas are important in environments where we want to achieve high throughput and eventual consistency.
 
