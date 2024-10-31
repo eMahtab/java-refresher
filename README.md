@@ -20,7 +20,23 @@
     for(int[] nums : arr4)
     System.out.println("Arr 4 : " + Arrays.toString(nums));  // {{1, 2, 3}, {4, 5, 6}}
 ```
+**Removing a key from Map while iterating over the map, can result in ConcurrentModificationException**
+```java
+import java.util.*;
 
+class Main {
+   public static void main(String[] args) {
+      Map<Integer, List<Integer>> map = new HashMap<>();
+      map.put(9, Arrays.asList(1, 4));
+      map.put(2, new ArrayList<Integer>());
+      for (int key : map.keySet()) {
+         if (map.get(key).size() == 0) {
+            map.remove(key);
+         }
+      }
+   }
+}
+```
 **Collections.reverse() - works fine with list of lists 👍**
 
 ```
