@@ -5,7 +5,18 @@
 
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
-
+**Instant**
+```java
+import java.time.Instant;
+public class Test {
+	public static void main(String[] args) {
+		Instant now = Instant.now();
+		System.out.println("Now : "+now); // Now : 2024-11-08T16:10:02.367923Z
+		long millis = now.toEpochMilli(); // Milis from Epoch :1731082202367
+		System.out.println("Milis from Epoch :"+millis);
+	}
+}
+```
 **ArrayDeque Vs. LinkedList**
 
 `java.util.ArrayDeque` doesn't allow null while `java.util.LinkedList` does allow adding null.
