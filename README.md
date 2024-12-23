@@ -43,7 +43,7 @@ public class Test {
        map.put(2, "two"); map.put(5, "five");
        map.put(6, "six"); map.put(4,  "four");
        for(int key : map.keySet())
-    	   System.out.print(key+" , ");
+    	   System.out.print(key+" , "); // the output order can't be guaranteed
        // 1 , 2 , 3 , 4 , 5 , 6 , 
     }
 }
