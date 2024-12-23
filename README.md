@@ -76,12 +76,13 @@ Collections.reverse(list)
 // [[6], [4,5], [3], [1,2]]
 ``` 
 
-**Convert an int to binary string**
+## Convert an int to binary string
 ```
 Integer.toBinaryString(2) => 10
 Integer.toBinaryString(-2) => 11111111111111111111111111111110
 ```
-**Bitwise OR(|) and AND(&) operation**
+
+## Bitwise OR(|) and AND(&) operation
 ```
 int num5 = 5;
 int num8 = 8;
@@ -90,20 +91,21 @@ int and = 5 & 8;
 System.out.println("5 | 8 =" + or);  // 13
 System.out.println("5 & 8 =" + and); // 0
 ```
-**String substring() method**
+
+## String substring() method
 ```
 String s = "a";
 System.out.println(s.substring(1));   => "" (empty string)
 System.out.println(s.substring(2));   => StringIndexOutOfBoundsException  
 ```
 
-**Concat String and char**
+## Concat String and char
 ```
 String s = "a" + "hello".charAt(1);
 System.out.println(s); //ae
 ```
 
-**StringBuilder apppend**
+## StringBuilder apppend
 ```
 StringBuilder sb = new StringBuilder();
 sb.append('a');
@@ -112,7 +114,7 @@ sb.append("ABC");
 System.out.println(sb); // a1ABC
 ```
 
-**List add(int index, T element)**
+## List add(int index, T element)
 ```
 List<Integer> list = new ArrayList<>();
 list.add(1); list.add(2); list.add(3);
@@ -120,7 +122,7 @@ list.add(1, 5);
 System.out.println(list);  // [1, 5, 2, 3]
 ```
 
-**List set(int index, T element)**
+## List set(int index, T element)
 ```
 List<Integer> list = new ArrayList<>();
 list.add(1); list.add(2); list.add(3);
@@ -128,7 +130,7 @@ list.set(1, 5);
 System.out.println(list);  // [1, 5, 3]
 ```
 
-**Set contains()**
+## Set contains()
 ```java
 
 import java.util.*;
