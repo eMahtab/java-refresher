@@ -1,11 +1,11 @@
 # Java Refresher
 
 
-**Empty array**
+## Empty array
 
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
-**Instant**
+## Instant
 ```java
 import java.time.Instant;
 public class Test {
@@ -18,11 +18,11 @@ public class Test {
 	}
 }
 ```
-**ArrayDeque Vs. LinkedList**
+## ArrayDeque Vs. LinkedList
 
 `java.util.ArrayDeque` doesn't allow null while `java.util.LinkedList` does allow adding null.
 
-**Cloning a 1D/2D array of primitives with .clone()**
+## Cloning a 1D/2D array of primitives with .clone()
 ```java
     int[] arr1 = {5, 6, 3, 2, 10};
     int[] arr2 =  arr1.clone();
@@ -32,7 +32,8 @@ public class Test {
     for(int[] nums : arr4)
     System.out.println("Arr 4 : " + Arrays.toString(nums));  // {{1, 2, 3}, {4, 5, 6}}
 ```
-**Removing a key from Map while iterating over the map, can result in ConcurrentModificationException**
+
+## Removing a key from Map while iterating over the map, can result in ConcurrentModificationException
 ```java
 import java.util.*;
 
