@@ -50,7 +50,9 @@ class Main {
    }
 }
 ```
-**ConcurrentHashMap : For higher throughput, doesn't lock entire map while performing a write** 
+
+## ConcurrentHashMap : For higher throughput, doesn't lock entire map while performing a write
+
 ```
 Read operations are guaranteed not to be blocked or block a key. Write operations are blocked and block other writes at the map Entry level. These two ideas are important in environments where we want to achieve high throughput and eventual consistency.
 
@@ -58,7 +60,8 @@ HashTable and Collections.synchronizedMap collections also implement concurrency
 
 On the other hand, the ConcurrentHashMap class locks at a map Entry level. Thus, other threads are not blocked from writing on other map keys. Therefore, to achieve high throughput, ConcurrentHashMap in multi-thread environments is a better option when compared to HashTable and synchronizedMap collections.
 ```
-**Collections.reverse() - works fine with list of lists 👍**
+
+## Collections.reverse() - works fine with list of lists 👍
 
 ```
 list = [[1,2], [3], [4,5] , [6]]
