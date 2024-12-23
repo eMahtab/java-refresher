@@ -51,6 +51,13 @@ class Main {
 }
 ```
 
+```
+Exception in thread "main" java.util.ConcurrentModificationException
+	at java.base/java.util.HashMap$HashIterator.nextNode(HashMap.java:1606)
+	at java.base/java.util.HashMap$KeyIterator.next(HashMap.java:1629)
+	at Test/net.mahtabalam.Main.main(Main.java:15)
+```
+
 ## ConcurrentHashMap : For higher throughput, doesn't lock entire map while performing a write
 
 ```
