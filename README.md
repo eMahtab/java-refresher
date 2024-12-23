@@ -33,7 +33,7 @@ public class Test {
     System.out.println("Arr 4 : " + Arrays.toString(nums));  // {{1, 2, 3}, {4, 5, 6}}
 ```
 
-## Removing a key from Map while iterating over the map, can result in ConcurrentModificationException
+## Removing a key from Map while iterating over the map, results in ConcurrentModificationException
 ```java
 import java.util.*;
 
