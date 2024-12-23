@@ -12,8 +12,9 @@ public class Test {
 	public static void main(String[] args) {
 		Instant now = Instant.now();
 		System.out.println("Now : "+now); // Now : 2024-11-08T16:10:02.367923Z
-		long millis = now.toEpochMilli(); // Milis from Epoch :1731082202367
+		long millis = now.toEpochMilli();
 		System.out.println("Milis from Epoch :"+millis);
+		// Milis from Epoch :1731082202367
 	}
 }
 ```
