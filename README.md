@@ -58,6 +58,28 @@ Exception in thread "main" java.util.ConcurrentModificationException
 	at Test/net.mahtabalam.Main.main(Main.java:15)
 ```
 
+## To remove keys while iterating over map keys, use iterator.remove()
+```java
+import java.util.*;
+
+class Main {
+   public static void main(String[] args) {
+      Map<Integer, List<Integer>> map = new HashMap<>();
+      map.put(9, Arrays.asList(1, 4));
+      map.put(2, new ArrayList<Integer>());
+      Iterator<Integer> iterator =  map.keySet().iterator();
+      while (iterator.hasNext()) {
+    	 Integer key = iterator.next();
+         if (map.get(key).size() == 0) {
+            iterator.remove();
+         }
+      }
+      System.out.println(map); // {9=[1, 4]}
+   }
+}
+```
+
+
 ## ConcurrentHashMap : For higher throughput, doesn't lock entire map while performing a write
 
 ```
