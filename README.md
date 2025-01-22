@@ -48,6 +48,20 @@ public class Test {
     }
 }
 ```
+# Iterating over a map with Java 8 forEach
+```java
+import java.util.Map;
+
+public class Test {
+	public static void main(String[] args) {
+        Map<String,Integer> map = Map.of("one", 1, "two", 2, "three", 3);
+        map.forEach((k,v) -> System.out.println(k + "=" + v));
+        // two=2
+        // three=3
+        // one=1
+	}
+}
+```
 
 ## Use LinkedHashMap if you want to maintain insertion order
 ```java
