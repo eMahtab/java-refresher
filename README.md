@@ -5,6 +5,11 @@
 
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
+## Default implementation of equals() method in Object class
+```java
+
+```
+
 ## Instant
 ```java
 import java.time.Instant;
