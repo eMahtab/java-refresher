@@ -28,7 +28,7 @@ Calling hashCode() on the same object multiple times must return same hash code.
 
 ## equals() and hashCode() contract
 
-If for two objects equals() method returns true, means they match, then the calling hashcode() on those two objects should return exact same value.
+If for two objects equals() method returns true, means they match, then calling hashcode() on those two objects should return exact same value.
 
 ## Instant
 ```java
