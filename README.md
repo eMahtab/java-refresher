@@ -18,6 +18,13 @@ public boolean equals(Object obj) {
 }
 ```
 
+## Default implementation of hashCode() method in Object class
+
+**The exact algorithm depends on the JVM implementation**, the returned hash code is typically based on the memory address of the object.
+
+**The default hashCode() implementation, does not guarantee different hash codes for two different objects.**
+
+
 ## Instant
 ```java
 import java.time.Instant;
