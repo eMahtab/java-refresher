@@ -6,8 +6,12 @@
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
 ## Default implementation of equals() method in Object class
+The default implementation of equals method, two objects are same only if both refer to same instance.
 ```java
 
+public boolean equals(Object obj) {
+    return (this == obj);
+}
 ```
 
 ## Instant
