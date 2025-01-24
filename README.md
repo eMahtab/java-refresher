@@ -24,6 +24,7 @@ public boolean equals(Object obj) {
 
 **The default hashCode() implementation, does not guarantee different hash codes for two different objects.**
 
+Calling hashCode() on the same object multiple times should return same hash code.
 
 ## Instant
 ```java
