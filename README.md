@@ -30,6 +30,18 @@ public boolean equals(Object anObject) {
 }
 ```
 
+## Implementation of equals() method in Integer class
+Compares this object to the specified object.  The result is true if and only if the argument is not null and is an Integer object that contains the same int value as this object.
+
+```java
+public boolean equals(Object obj) {
+        if (obj instanceof Integer) {
+            return value == ((Integer)obj).intValue();
+        }
+        return false;
+}
+```
+
 ## Default implementation of hashCode() method in Object class
 
 **The exact algorithm depends on the JVM implementation**, the returned hash code is typically based on the memory address of the object.
