@@ -17,6 +17,18 @@ public boolean equals(Object obj) {
     return (this == obj);
 }
 ```
+## Implementation of equals() method in String class
+Returns true if the given object represents a String equivalent to this string, false otherwise.
+```java
+public boolean equals(Object anObject) {
+        if (this == anObject) {
+            return true;
+        }
+        return (anObject instanceof String aString)
+                && (!COMPACT_STRINGS || this.coder == aString.coder)
+                && StringLatin1.equals(value, aString.value);
+}
+```
 
 ## Default implementation of hashCode() method in Object class
 
