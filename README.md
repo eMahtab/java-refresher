@@ -20,6 +20,23 @@ public class Main {
 }
 ```
 
+## Immutable Collections
+```java
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> immutableList = List.of("banana", "apple", "cherry");
+
+        // Trying to sort the immutable list, will throw java.lang.UnsupportedOperationException
+        // Collections.sort(immutableList);
+
+        // Trying to add element to a immutable list, , will throw java.lang.UnsupportedOperationException
+        // immutableList.add("orange");
+    }
+}
+```
+
 ## Default implementation of equals() method in Object class
 
 The default implementation of equals method is, two objects are same only if both refer to same instance.
