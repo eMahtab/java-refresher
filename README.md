@@ -5,7 +5,7 @@
 
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
-## == and equals(), compairing references vs compairing content
+## == and equals(), comparing references vs comparing content
 ```java
 public class Main {
     public static void main(String[] args) {
