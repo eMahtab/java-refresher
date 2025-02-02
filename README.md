@@ -37,6 +37,16 @@ public class Main {
 }
 ```
 
+## Returning empty Immutbale collections when there is no data
+Immutable empty collections are often returned from methods when there is no data, rather than returning null, its better to return empty immutable collection.
+Returning empty collection is safe way to guard against NullPointerException, any by returning immutable empty collection we can enfore that the collection can not be modified.
+
+```java
+Collections.emptyList()
+Collections.emptySet()
+Collections.emptyMap()
+```
+
 ## Default implementation of equals() method in Object class
 
 The default implementation of equals method is, two objects are same only if both refer to same instance.
