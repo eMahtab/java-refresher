@@ -5,6 +5,21 @@
 
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
+## == and equals(), compairing references vs compairing content
+```java
+public class Main {
+    public static void main(String[] args) {
+       String s1 = "Hello";
+       String s2 = new String("Hello");
+       String s3 = s1; 
+       System.out.println(s1 == s2); // false
+       System.out.println(s1.equals(s2)); // true
+       System.out.println(s1.equals(s3)); // true
+       System.out.println(s1 == s3); // true
+    }
+}
+```
+
 ## Default implementation of equals() method in Object class
 
 The default implementation of equals method is, two objects are same only if both refer to same instance.
