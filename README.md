@@ -47,6 +47,35 @@ Collections.emptySet() or Collections.<Integer>emptySet()
 Collections.emptyMap() or Collections.<String,Integer>emptyMap()
 ```
 
+## Collectors.partitioningBy(Predicate)
+
+Collectors.partitioningBy() is a collector in Java used to partition elements of a stream into two groups based on a given predicate. The result is a Map<Boolean, List<T>> where:
+
+true key contains elements that satisfy the predicate.
+
+false key contains elements that do not satisfy the predicate.
+
+```java
+import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+        // Partition numbers into even and odd
+        Map<Boolean, List<Integer>> partitioned = numbers.stream()
+                .collect(Collectors.partitioningBy(n -> n % 2 == 0));
+
+        System.out.println("Even numbers: " + partitioned.get(true));
+        System.out.println("Odd numbers: " + partitioned.get(false));
+    }
+}
+```
+
+
 ## Default implementation of equals() method in Object class
 
 The default implementation of equals method is, two objects are same only if both refer to same instance.
