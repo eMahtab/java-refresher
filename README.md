@@ -42,9 +42,9 @@ Immutable empty collections are often returned from methods when there is no dat
 Returning empty collection is safe way to guard against NullPointerException, any by returning immutable empty collection we can enfore that the collection can not be modified.
 
 ```java
-Collections.emptyList()
-Collections.emptySet()
-Collections.emptyMap()
+Collections.emptyList() or Collections.<String>emptyList()
+Collections.emptySet() or Collections.<Integer>emptySet() 
+Collections.emptyMap() or Collections.<String,Integer>emptyMap()
 ```
 
 ## Default implementation of equals() method in Object class
