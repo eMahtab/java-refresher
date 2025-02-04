@@ -9,6 +9,8 @@
 
 Marking a class as final in Java means that it cannot be subclassed (extended). This is done for several reasons e.g. Ensuring that the class's behavior remains as designed.
 
+java.lang.String, java.lang.Integer, java.lang.Double, java.lang.Boolean (All wrapper classes) etc. are final classes in JDK.
+
 ## == and equals(), comparing references vs comparing content
 ```java
 public class Main {
