@@ -5,6 +5,10 @@
 
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
+## final class 
+
+Marking a class as final in Java means that it cannot be subclassed (extended). This is done for several reasons e.g. Ensuring that the class's behavior remains as designed.
+
 ## == and equals(), comparing references vs comparing content
 ```java
 public class Main {
