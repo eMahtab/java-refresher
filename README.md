@@ -59,7 +59,64 @@ When a subclass B extends a superclass A, the order of execution is:
 5. Instance blocks of subclass (B)
 6. Constructor of subclass (B)
 
+```java
+class A {
+    static {
+        System.out.println("Static Block of A");
+    }
+    {
+        System.out.println("Instance Block of A");
+    }
 
+    A() {
+        System.out.println("Constructor of A");
+    }
+}
+
+class B extends A {
+
+    static {
+        System.out.println("Static Block of B");
+    }
+    {
+        System.out.println("Instance Block of B");
+    }
+
+    B() {
+        System.out.println("Constructor of B");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("main Method Starts");
+
+        A a = new A();
+        System.out.println("----------------------");
+        B obj1 = new B();
+        System.out.println("----------------------");
+        B obj2 = new B();
+    }
+}
+```
+
+```
+main Method Starts
+Static Block of A
+Instance Block of A
+Constructor of A
+----------------------
+Static Block of B
+Instance Block of A
+Constructor of A
+Instance Block of B
+Constructor of B
+----------------------
+Instance Block of A
+Constructor of A
+Instance Block of B
+Constructor of B
+```
 
 ## final class 
 
