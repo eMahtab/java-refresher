@@ -46,6 +46,20 @@ main Method Starts
 2. Instance Block
 3. Constructor
 ```
+## static and instance blocks execution order in inheritance
+
+**Execution Order in Inheritance:**
+
+When a subclass B extends a superclass A, the order of execution is:
+
+1. Static blocks of superclass (A)
+2. Static blocks of subclass (B)
+3. Instance blocks of superclass (A)
+4. Constructor of superclass (A)
+5. Instance blocks of subclass (B)
+6. Constructor of subclass (B)
+
+
 
 ## final class 
 
