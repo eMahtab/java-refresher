@@ -9,11 +9,11 @@
 
 **Execution Order:**
 
-1.Static block(s) → Executed once when the class is loaded (before objects are created).
+1.Static block(s) → **Executed only once** when the class is loaded (before objects are created).
 
-2.Instance block(s) → Executed before the constructor when an object is created.
+2.Instance block(s) → Executed before the constructor **when an object is created.**
 
-3.Constructor(s) → Executed after instance blocks when an object is created.
+3.Constructor(s) → **Executed after instance blocks when an object is created.**
 
 ```java
 class Main {
