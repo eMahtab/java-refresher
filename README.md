@@ -7,6 +7,15 @@
 
 ## static and instance blocks
 
+**Execution Order:**
+
+1.Static block(s) → Executed once when the class is loaded (before objects are created).
+
+2.Instance block(s) → Executed before the constructor when an object is created.
+
+3.Constructor(s) → Executed after instance blocks when an object is created.
+
+```java
 class Main {
     
     static {
@@ -27,6 +36,7 @@ class Main {
         Main obj2 = new Main();
     }
 }
+```
 
 ```
 1. Static Block
