@@ -5,6 +5,38 @@
 
 `int[] emptyArray = new int[0];` , but this won't even compile `int[] compileError = new int[];`
 
+## static and instance blocks
+
+class Main {
+    
+    static {
+        System.out.println("1. Static Block");
+    }
+
+    {
+        System.out.println("2. Instance Block");
+    }
+
+    Main() {
+        System.out.println("3. Constructor");
+    }
+
+    public static void main(String[] args) {
+        System.out.println("main Method Starts");
+        Main obj1 = new Main();
+        Main obj2 = new Main();
+    }
+}
+
+```
+1. Static Block
+main Method Starts
+2. Instance Block
+3. Constructor
+2. Instance Block
+3. Constructor
+```
+
 ## final class 
 
 Marking a class as final in Java means that it cannot be subclassed (extended). This is done for several reasons e.g. Ensuring that the class's behavior remains as designed.
